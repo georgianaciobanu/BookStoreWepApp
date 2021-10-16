@@ -1,0 +1,17 @@
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\BookStoreApp.Services.deps.json
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\BookStoreApp.Services.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\ref\BookStoreApp.Services.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\BookStoreApp.Services.pdb
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\BookStoreApp.DataAccess.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\BookStoreApp.Models.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\BookStoreApp.DataAccess.pdb
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\bin\Debug\net5.0\BookStoreApp.Models.pdb
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.csprojAssemblyReference.cache
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.AssemblyInfoInputs.cache
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.AssemblyInfo.cs
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.csproj.CoreCompileInputs.cache
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.csproj.CopyComplete
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\ref\BookStoreApp.Services.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Services\obj\Debug\net5.0\BookStoreApp.Services.pdb

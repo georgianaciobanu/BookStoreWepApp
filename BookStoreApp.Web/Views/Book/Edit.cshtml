@@ -1,0 +1,7 @@
+﻿@model BookVM
+
+@{ ViewData["Title"] = "Edit a book"; }
+
+@{ ViewBag.IsNew = false;}
+
+@await Html.PartialAsync(@"../Shared/Components/_Book.cshtml")

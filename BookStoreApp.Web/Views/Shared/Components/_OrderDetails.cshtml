@@ -1,0 +1,156 @@
+﻿@model OrderDetailsVM
+
+@{ ViewData["Title"] = "Order Page"; }
+
+
+@{ string action = "";
+    if ((bool)ViewBag.IsNew)
+        action = "/OrderDetails/New";
+    else
+        action = string.Format("/OrderDetails/Edit/{0}", Model.Id); }
+
+
+@inject IHttpContextAccessor HttpContextAccessor
+@{ var lstCart = HttpContextAccessor.HttpContext.Session.Get<List<BookVM>>(SessionHelper.ShoppingCart); }
+
+@{var homePageRoute = "/Home/Index"; }
+
+
+<h2 class="text-info">Order Details</h2>
+
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 table-round bg-light shadow">
+
+        <br />
+        <h4>Order</h4>
+        <br />
+
+        <div class="col-xl-12">
+
+            <input asp-for="Id" hidden />
+
+            <form action="@action" method="post" enctype="multipart/form-data">
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <br />
+                <div class="row">
+
+                    <div class="col-sm-12 col-lg-12">
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-2">
+                                <label class="control-label font-weight-bold">Customer name</label>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-4">
+                                <input asp-for="CustomerName" class="form-control" /><br />
+                                <span asp-validation-for="CustomerName" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2">
+                                <label class="control-label font-weight-bold">Customer Email</label>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-4">
+                                <input asp-for="CustomerEmail" class="form-control" /><br />
+                                <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2">
+                                <label class="control-label font-weight-bold">Customer PhoneNumber</label>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-4">
+                                <input asp-for="CustomerPhoneNumber" class="form-control" /><br />
+                                <span asp-validation-for="CustomerPhoneNumber" class="text-danger"></span>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <br />
+
+
+
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-2">
+                                <label class="control-label font-weight-bold">Customer Address</label>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-10">
+                                @Html.TextArea("CustomerAddress", Model.CustomerAddress, new { @class = "form-control" })
+                                <span asp-validation-for="CustomerAddress" class="text-danger"></span>
+                            </div>
+
+                        </div>
+
+                        <br />
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <br />
+                <br />
+
+                <br />
+                <table id="table" class="table table-hover table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th hidden>Book Id</th>
+                            <th>Image</th>
+                            <th>Book title</th>
+                            <th>Book author</th>
+                            <th>Book publisher</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @if (lstCart != null)
+            @foreach (var item in lstCart) {
+            <tr id="@item.Id">
+                <td hidden>@item.Id</td>
+                <td><img src="~/@item.ImagePath" alt="no image" width="100%" style="border-radius:5px; border:1px solid #bbb9b9;" /></td>
+                <td>@item.Name</td>
+                <td>@item.Author</td>
+                <td>@item.Publisher</td>
+                <td>@item.Price</td>
+            </tr>
+}
+
+                    </tbody>
+
+                </table>
+
+
+                <div class="form-group">
+                    <input asp-route="homePageRoute" type="submit" value="Confirm Order" class="btn btn-primary" />
+
+                </div>
+
+
+                <a href="@string.Format(homePageRoute)" class="btn pull-right btn-outline-info">Cancel</a>
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+</div>

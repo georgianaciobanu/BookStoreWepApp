@@ -1,0 +1,78 @@
+﻿@model IEnumerable<BookVM>
+
+
+@{ ViewData["Title"] = "Book"; }
+
+<div class="row mb-2 mt-2 operationsButtons">
+    <div class="col-md-12">
+        <a href="/Book/New" class="btn btn-new btn-outline-new font-weight-bold mr-2" data-toggle="tooltip" title="New" data-placement="top">
+            <span class="fa fa-plus-circle"></span>
+        </a>
+
+        <button class="btn btn-outline-dark font-weight-bold mr-2" data-toggle="tooltip" title="Edit" data-placement="top" onclick="Book.onEditBtnPress()">
+            <span class="fa fa-edit"></span>
+        </button>
+
+        <button type="button" class="btn btn-delete btn-outline-delete font-weight-bold mr-2" id="btnDelete" data-toggle="tooltip" data-placement="top" title="Delete" onclick="Book.onDelete()">
+            <span class="fa fa-trash"></span>
+        </button>
+    </div>
+</div>
+
+<br />
+<br />
+
+<form asp-controller="Book" asp-action="Index"  method="get">
+    <p>
+        <label class="control-label font-weight-bold">Search for your book</label>
+        <br />
+        <div name="BookType" class="form-group">
+            @*@Html.LabelFor(model => model.First().BookTypes, new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @*@Html.DropDownList("BookTypes", "-- Select --")*@
+                @Html.DropDownList("selectedBookTypeName", (IEnumerable<SelectListItem>)(ViewBag.BookTypes))
+                
+                <br />
+                <br />
+                Name: <input type="text" name="SearchString" />
+                <br />
+                <br />
+                <input type="submit" style="width: 100px" class="btn btn-success" value="Filter" />
+            </div>
+        </div>
+    </p>
+</form>
+
+<table id="table" class="table table-hover table-striped table-dark">
+    <thead>
+        <tr>
+            <th hidden>Book Id</th>
+            <th>Image</th>
+            <th>Book name</th>
+            <th>Book author</th>
+            <th>Book publisher</th>
+            <th>Book Description</th>
+            <th>Price</th>
+            <th>Pages no</th>
+            <th>Is in stoc</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model) {
+        <tr id="@item.Id">
+            <td hidden>@item.Id</td>
+            <td><img style="width: 300px; height: 150px;" src="~/@item.ImagePath" alt="nu exista imagine momentan" /></td>
+            <td>@item.Name</td>
+            <td>@item.Author</td>
+            <td>@item.Publisher</td>
+            <td>@item.Description</td>
+            <td>@item.Price</td>
+            <td>@item.PagesNo</td>
+            <td><input type="checkbox" checked="@item.IsAvailable" /></td>
+        </tr>}
+
+    </tbody>
+
+</table>

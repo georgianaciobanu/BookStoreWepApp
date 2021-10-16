@@ -1,0 +1,15 @@
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\bin\Debug\net5.0\BookStoreApp.Models.deps.json
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\bin\Debug\net5.0\BookStoreApp.Models.runtimeconfig.json
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\bin\Debug\net5.0\BookStoreApp.Models.runtimeconfig.dev.json
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\bin\Debug\net5.0\BookStoreApp.Models.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\bin\Debug\net5.0\ref\BookStoreApp.Models.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\bin\Debug\net5.0\BookStoreApp.Models.pdb
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.csprojAssemblyReference.cache
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.AssemblyInfoInputs.cache
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.AssemblyInfo.cs
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\ref\BookStoreApp.Models.dll
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.pdb
+C:\Users\elena\Pictures\MASTER\BookStoreApp\BookStoreApp.Models\obj\Debug\net5.0\BookStoreApp.Models.genruntimeconfig.cache
