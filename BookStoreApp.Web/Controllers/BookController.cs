@@ -65,11 +65,16 @@ namespace BookStoreApp.Web.Controllers {
                 ModelState.AddModelError(string.Empty, "There were some errors in your form");                        
                 return View(dto);
             }
-            var list= serviceTypes.GetAllBookType();
             dto.BookTypes = service.GetBookTypes();
-            dto.BookTypeName = list.Where(s => s.Id == dto.BookTypeId).FirstOrDefault().Name;
 
             service.AddBook(dto);
+
+            var BookTypes = new SelectList(service.GetBookTypes().Select(
+             g => g.Name)).ToList();
+
+
+
+            ViewBag.BookTypes = BookTypes;
 
             return View("Index", service.GetAllBooks());
         }

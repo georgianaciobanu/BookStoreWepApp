@@ -26,10 +26,9 @@
     <p>
         <label class="control-label font-weight-bold">Search for your book</label>
         <br />
-        <div name="BookType" class="form-group">
-            @*@Html.LabelFor(model => model.First().BookTypes, new { @class = "control-label col-md-2" })*@
-            <div class="col-md-10">
-                @*@Html.DropDownList("BookTypes", "-- Select --")*@
+        <div name="BookType" class="form-group">          
+            <div class="col-md-10"> 
+                
                 @Html.DropDownList("selectedBookTypeName", (IEnumerable<SelectListItem>)(ViewBag.BookTypes))
                 
                 <br />
